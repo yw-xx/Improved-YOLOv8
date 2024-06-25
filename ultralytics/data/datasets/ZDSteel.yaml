@@ -1,0 +1,25 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC/
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+
+
+# download command/URL (optional)
+# download: bash data/scripts/get_voc.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+# 上面那三个txt文件的位置
+train: /root/autodl-tmp/ultralytics-main/datasets/ZDSteel/images/train
+val: /root/autodl-tmp/ultralytics-main/datasets/ZDSteel/images/val
+test: /root/autodl-tmp/ultralytics-main/datasets/ZDSteel/images/test
+
+
+# number of classes
+nc: 8
+
+# class names
+# names: ['swelling','dent','scratch','peeling','gap' ,'perforation' ,'weld', 'snake']
+
+names: ['dent', 'peeling', 'swelling', 'weld', 'scratch', 'gap', 'curved_scar', 'perforation']
